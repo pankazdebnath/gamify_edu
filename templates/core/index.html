@@ -1,0 +1,285 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Index Page{% endblock %}
+
+{% block content %}
+<!-- Banner Section-->
+<section class="banner-section" style="background-image: url({% static 'images/bg01.jpg' %});">
+	<div class="auto-container">
+		<div class="row">
+			<div class="content-column col">
+				<div class="inner-column wow fadeInUp pt-5" data-wow-delay="300ms">
+					<div class="title-box">
+						<h3>Learn <span style="color: #34A853">Personalizes</span></h3>
+						<!-- <div class="text">Learn Personalizes signifies a learning system or platform that tailors <br> educational experiences to individual learners needs and preferences.
+						  </div> -->
+						<a href="#" class="theme-btn btn-style-three call-modal"
+						   style="font-size: 18px;">Get Started</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Info BLock Four -->
+			<div class="info_block_four anm wow fadeIn" data-wow-delay="2500ms" data-speed-x="3" data-speed-y="3">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Banner Section-->
+
+
+<!--find Section-->
+<!-- Call To Action -->
+<section class="call-to-action">
+	<div class="auto-container">
+		<div class="outer-box1 wow fadeInUp"
+			 style="background-image: url({% static 'images/sm_bg01.jpg' %});
+				 background-position: center;
+				 background-size: cover; ">
+
+			<div class="row">
+				<div class="col-lg-10 col-md-12 col-sm-12">
+					<div class="sec-title1">
+						<h3 style="color: dark; font-size: 30pt;">Find All Class Lectures An Exercises</h3>
+					</div>
+				</div>
+
+				<div class=" col-lg-2 col-md-12 col-sm-12 text-center">
+					<div class="sec-title1">
+						<a href="#" class="theme-btn btn-style-one bg-dark"><span class="btn-title"
+																				  style="font-size: 18px;">Find</span></a>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</section>
+<!-- End Call To Action -->
+
+
+<!-- Job Section -->
+<section class="job-section-four">
+	<div class="auto-container">
+		<div class="row">
+			<!-- Job Block -->
+			{% for grade in grades %}
+			<div class="job-block-four col-lg-4 col-md-6 col-sm-12">
+				<a href="#">
+				<div class="inner-box">
+
+					<ul class="job-other-info">
+						<li class="header">{{ grade.name }}</li>
+					</ul>
+
+
+					<h4 style="padding-top: 10px;">{{ grade.topics }}</h4>
+
+					<ul class="post-tags">
+						<li><a href="#">Math</a></li>
+						<li><a href="#">Engish</a></li>
+						<li><a href="#">Science</a></li>
+						<!-- <li class="colored">+2</li> -->
+					</ul>
+				</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+
+		<div class="btn-box">
+			<a href="#" class="theme-btn btn-style-seven">Load More</a>
+		</div>
+	</div>
+</section>
+<!-- End Job Section -->
+
+<!-- Job Categories -->
+<section class="job-categories">
+	<div class="auto-container">
+		<div class="sec-title text-center">
+			<h2>What is available at Learner</h2>
+
+		</div>
+
+		<div class="row wow fadeInUp">
+			<!-- Category Block -->
+			<div class="category-block col-lg-3 col-md-6 col-sm-12">
+				<div class="inner-box">
+					<div class="content">
+						<span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+						<h4><a href="#">Practice lesson</a></h4>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Category Block -->
+			<div class="category-block col-lg-3 col-md-6 col-sm-12">
+				<div class="inner-box">
+					<div class="content">
+						<span class="icon"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span>
+						<h4><a href="#">Practice MCQ</a></h4>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Category Block -->
+			<div class="category-block col-lg-3 col-md-6 col-sm-12">
+				<div class="inner-box">
+					<div class="content">
+						<span class="icon"><i class="fa fa-question" aria-hidden="true"></i></span>
+						<h4><a href="#">Quick MCQ</a></h4>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Category Block -->
+			<div class="category-block col-lg-3 col-md-6 col-sm-12">
+				<div class="inner-box">
+					<div class="content">
+						<span class="icon"><i class="fa fa-clipboard" aria-hidden="true"></i></span>
+						<h4><a href="#">Exam</a></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Job Categories -->
+
+
+<section class="top-companies style-three">
+	<div class="auto-container">
+		<div class="sec-title text-center">
+			<h2>Skills</h2>
+
+		</div>
+
+		<div class="carousel-outer wow fadeInUp">
+
+			<div class="companies-carousel-two owl-carousel owl-theme default-dots">
+
+				<div class="company-block">
+					<div class="inner-box bg-clr-1">
+						<img src="{% static 'images/books/1.jpeg' %}" alt="">
+
+					</div>
+				</div>
+
+
+				<div class="company-block">
+					<div class="inner-box bg-clr-1">
+						<img src="{% static 'images/books/2.jpg' %}" alt="">
+					</div>
+				</div>
+
+
+				<div class="company-block">
+					<div class="inner-box bg-clr-1">
+						<img src="{% static 'images/books/3.jpeg' %}" alt="">
+					</div>
+				</div>
+
+
+				<div class="company-block">
+					<div class="inner-box bg-clr-1">
+						<img src="{% static 'images/books/4.jpg' %}" alt="">
+					</div>
+				</div>
+
+
+				<div class="company-block">
+					<div class="inner-box bg-clr-1">
+						<img src="{% static 'images/books/5.jpeg' %}" alt="">
+					</div>
+				</div>
+
+
+				<div class="company-block">
+					<div class="inner-box bg-clr-1">
+						<img src="{% static 'images/books/6.jpeg' %}" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Testimonial Section -->
+<section class="testimonial-section -type-2 layout-pt-120 layout-pb-120">
+	<div class="container-fluid">
+		<!-- Sec Title -->
+
+		<div class="sec-title -type-1 text-center">
+			<h2>Student Review & Feedback</h2>
+
+		</div>
+
+		<div class="carousel-outer wow fadeInUp">
+			<!-- Testimonial Carousel -->
+			<div class="testimonial-carousel owl-carousel owl-theme">
+
+				<!--Testimonial Block -->
+				<div class="testimonial-block">
+					<div class="inner-box">
+						<div class="info-box">
+							<div class="thumb"><img src="images/resource/student.jpg" alt=""></div>
+							<div class="content">
+								<h4 class="name">Theresa Webb</h4>
+								<span class="designation">Student</span>
+							</div>
+						</div>
+
+						<div class="text">The template is really nice and offers quite a large set of options. It’s
+							beautiful and the coding is done quickly and seamlessly. Thank you!
+						</div>
+					</div>
+				</div>
+
+				<!--Testimonial Block -->
+				<div class="testimonial-block">
+					<div class="inner-box">
+						<div class="info-box">
+							<div class="thumb"><img src="images/resource/student.jpg" alt=""></div>
+							<div class="content">
+								<h4 class="name">Cameron Williamson</h4>
+								<span class="designation">Student</span>
+							</div>
+						</div>
+
+						<div class="text">The template is really nice and offers quite a large set of options. It’s
+							beautiful and the coding is done quickly and seamlessly. Thank you!
+						</div>
+					</div>
+				</div>
+
+				<!--Testimonial Block -->
+				<div class="testimonial-block">
+					<div class="inner-box">
+						<div class="info-box">
+							<div class="thumb"><img src="images/resource/student.jpg" alt=""></div>
+							<div class="content">
+								<h4 class="name">Marvin McKinney</h4>
+								<span class="designation">Student</span>
+							</div>
+						</div>
+
+						<div class="text">The template is really nice and offers quite a large set of options. It’s
+							beautiful and the coding is done quickly and seamlessly. Thank you!
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Testimonial Section -->
+
+{% endblock %}
